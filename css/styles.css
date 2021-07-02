@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Landing Page v6.0.1 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
-*/
-/*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -59,6 +54,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: overlay;
 }
 
 hr {
@@ -211,7 +207,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #9232d2;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2948,32 +2944,33 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #943add;
+  border-color: #9232d2;
 }
+/* 0d6efd */
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #7d36b8;
+  border-color: #9232d2;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background-color: #943add;
+  border-color: #9232d2;
+  box-shadow: 0 0 0 0.25rem rgba(130, 45, 190, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: #9232d2;
+  border-color: #8931c4;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(130, 45, 190, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #9232d2;
+  border-color: #8931c4;
 }
 
 .btn-secondary {
@@ -3392,7 +3389,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #9232d2;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3860,7 +3857,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #9232d2;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3960,7 +3957,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2.75rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -4251,6 +4248,17 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.navbar-gradient {
+  background: #FD297B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FD297B, #FF655B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fd297b, #FF655B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-brand-font {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
 }
 
 .card {
@@ -4565,13 +4573,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
+  color: #9232d2;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
+  color: #9232d2;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -6104,7 +6112,7 @@ textarea.form-control-lg {
   color: #0d6efd;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #0a58ca;
+  color: #9232d2;
 }
 
 .link-secondary {
@@ -10927,3 +10935,19 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+.custom-font {
+  font-family: 'Comfortaa';
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: rgba(128, 128, 128, 0.450); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.850); 
+}
